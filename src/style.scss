@@ -24,9 +24,16 @@
     /* url of the font */
 }
 
+html {
+    overflow: hidden;
+    height: 100%;
+}
 
 body {
-    overflow: hidden;
+    overflow: auto;
+    height: 100%;
+    overscroll-behavior: none;
+
 }
 
 .video-wrapper {
@@ -49,15 +56,8 @@ body {
         display: flex;
         flex-direction: column;
         height: 100vh;
+        overflow: visible;
         width: 100vw;
-
-
-        header {
-            position: fixed;
-            height: 100px;
-            width: 100%;
-
-        }
 
         .hero {
             display: flex;
@@ -308,10 +308,10 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: left;
-                    height: 80%;
+                    height: 100%;
                     justify-content: flex-end;
                     gap: 8vw;
-                    padding-bottom: 50px;
+                    padding-bottom: 5%;
                     padding-left: 15vw;
                     width: 100%;
 

@@ -6,6 +6,7 @@ export const allProjectsQuery = `
     description,
     date,
     thumbnail,
+    "thumbnailUrl": thumbnail.asset->url,
     "media": media[]{
       _type,
       url,
@@ -21,6 +22,7 @@ export const projectBySlugQuery = `
     description,
     date,
     thumbnail,
+    "thumbnailUrl": thumbnail.asset->url,
     "media": media[]{
       _type,
       url,
